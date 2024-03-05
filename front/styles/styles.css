@@ -68,16 +68,15 @@ nav{
 .botonBuscar:hover{
     color: #3f4c77f8 !important;
 }
+
 .navbar-toggler{
     background-color: rgba(240, 248, 255, 0.11);
     color: aliceblue !important;
     border: 1.5px solid #ffffff8c;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-
 }
 
-.
+
 /* ESTO ES PARA EL SLIDER AUTOMATICO */
 
 .container-slider{
