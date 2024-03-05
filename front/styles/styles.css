@@ -91,7 +91,7 @@ nav{
 
 @media (min-width: 768px) {
     .container-slider{
-        height: 60vh; /* Altura para pantallas grandes */
+        height: 50vh; /* Altura para pantallas grandes */
     }
 }
 
