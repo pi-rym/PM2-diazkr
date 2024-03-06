@@ -37,6 +37,7 @@ const crearCard = function(objeto){
 //Creamos la función que va a iterar sobre los elementos de la lista, que son objetos
 const funcionIteradora = function(list){
 
+
     list.forEach(objetoMovie =>crearCard(objetoMovie));
     list.forEach(objetoMovie =>crearCard(objetoMovie)); //**LUEGO BORRAR */
     list.forEach(objetoMovie =>crearCard(objetoMovie)); //**LUEGO BORRAR */
@@ -44,6 +45,8 @@ const funcionIteradora = function(list){
 
 
 // acá hacemos el get del array de objetos y luego llamamos a la función que itera
+
+// ACÁ SE PUEDE USAR array.forEach(crearCard) y tambien funciona
 const getObject = function(){
     $.get('https://students-api.2.us-1.fl0.io/movies', array => funcionIteradora(array));
 }
