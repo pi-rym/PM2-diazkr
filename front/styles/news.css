@@ -1,0 +1,97 @@
+/* importando letras */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    color: aliceblue !important;
+}
+body{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    font-family: "Sora", sans-serif;
+    color: aliceblue !important;
+    
+}
+
+nav{
+
+    box-shadow: inset 0 60px 60px -60px rgba(0, 0, 0, 1);
+    margin-bottom: 1.5em;
+
+}
+
+.icono-movie{
+    margin-right: 0.5em;
+    height: 1.2em;
+    width: 1.1em;
+    padding-bottom: 5px;
+}
+
+.navContainerMain, .containerNavFluid{
+    background: transparent !important;
+
+}
+
+
+.navContainer{
+    background: transparent ;
+    margin-left: 15%;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+
+.titleNav{
+    background: transparent;
+    margin-left: 2em;
+    font-weight: 700;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+.contenidoNav{
+    margin-left: 1.5em;
+    transition: 0.2s;
+}
+.contenidoNav:hover, .titleNav:hover{
+    transform: scale(1.1)
+}
+
+
+
+/* estilos del buscados  */
+
+.buscador{
+    margin-left: 10%;
+    width: 20em;
+
+}
+
+.botonBuscar:hover{
+    color: #3f4c77f8 !important;
+}
+
+.navbar-toggler{
+    background-color: rgba(240, 248, 255, 0.11);
+    color: aliceblue !important;
+    border: 1.5px solid #ffffff8c;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* NUEVOS ESTILOS  */
+
+.card-new{
+    width: 18rem;
+    margin: 1rem;
+    background-color: #202639;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+
+}
+
+.card-new:hover{
+    transform: scale(1.05);
+    background-color: #2f3547d0;
+}
