@@ -1,40 +1,5 @@
+const crearCard = require("./functions")
 
-
-const wrapperContainer = document.getElementById("wrapper");
-
-const crearCard = function(objeto){
-
-    //Crear la card y luego la añadimos al wrapper container
-    var card = document.createElement("div");
-    card.classList.add("swiper-slide", "card");
-
-
-    card.innerHTML = `
-            <div class="card-content">
-                <div class="image">
-                    <img src="${objeto.poster}" alt="">
-                </div>
-
-                <div class="name-profession">
-                    <span class="name">${objeto.title}</span>
-                    <span class="profession"> ${objeto.duration}</span>
-                </div>
-
-                <div class="button">
-                    <button class="aboutMe">Ver más</button>
-                </div>
-            </div>
-        `
-        
-        wrapperContainer.appendChild(card);
-    
-}
-
-
-//const ejecutarCards = tempData.map(pelicula => crearCard(pelicula));
-
-
-//Creamos la función que va a iterar sobre los elementos de la lista, que son objetos
 const funcionIteradora = function(list){
 
 
@@ -43,16 +8,13 @@ const funcionIteradora = function(list){
     list.forEach(objetoMovie =>crearCard(objetoMovie)); //**LUEGO BORRAR */
 }
 
-
-// acá hacemos el get del array de objetos y luego llamamos a la función que itera
-
-// ACÁ SE PUEDE USAR array.forEach(crearCard) y tambien funciona
 const getObject = function(){
     $.get('https://students-api.2.us-1.fl0.io/movies', array => funcionIteradora(array));
 }
 
-
 getObject();
+
+
 
 
 
