@@ -63,3 +63,6 @@ const newData = [
       linkUrl: "https://i.pinimg.com/564x/dd/c6/e4/ddc6e435721b8a7e62c4f9bb128ae83c.jpg"
     }
   ];
+
+
+module.exports = newData;

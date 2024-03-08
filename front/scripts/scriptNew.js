@@ -1,3 +1,5 @@
+const newData = require("./newData");
+
 
 const cardsContainer = document.getElementById("cardsContainer");
 
