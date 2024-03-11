@@ -16,7 +16,7 @@ class CarritoCompra{
     calcularTotal(){
         let total = 0;
         this.lista.forEach(producto => {
-            total += producto.price
+            total += (producto.price*producto.quantity);
         });
         return total;
     }

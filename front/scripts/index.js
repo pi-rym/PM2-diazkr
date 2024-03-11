@@ -1,18 +1,28 @@
-const crearCard = require("./functions")
+const axios = require('axios');
+const crearCard = require("./functions");
 
 const funcionIteradora = function(list){
-
-
     list.forEach(objetoMovie =>crearCard(objetoMovie));
     list.forEach(objetoMovie =>crearCard(objetoMovie)); //**LUEGO BORRAR */
     list.forEach(objetoMovie =>crearCard(objetoMovie)); //**LUEGO BORRAR */
 }
 
-const getObject = function(){
-    $.get('https://students-api.2.us-1.fl0.io/movies', array => funcionIteradora(array));
+const getObject = async () => {
+    try {
+
+        const listaPeliculasMayor = await axios.get('https://students-api.up.railway.app/movies')
+        const listaPeliculas = listaPeliculasMayor.data
+
+        funcionIteradora(listaPeliculas)
+        
+    } catch (error) {
+        console.log("Hay un error", error)
+    }
 }
 
 getObject();
+
+
 
 
 
