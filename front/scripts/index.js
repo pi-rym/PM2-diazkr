@@ -16,12 +16,11 @@ const getObject = async () => {
         funcionIteradora(listaPeliculas)
         
     } catch (error) {
-        console.log("Hay un error", error)
+        console.error("Hay un error del tipo", error.response.status)
     }
 }
 
 getObject();
-
 
 
 
