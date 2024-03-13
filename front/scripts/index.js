@@ -3,14 +3,14 @@ const crearCard = require("./functions");
 
 const funcionIteradora = function(list){
     list.forEach(objetoMovie =>crearCard(objetoMovie));
-    list.forEach(objetoMovie =>crearCard(objetoMovie)); //**LUEGO BORRAR */
-    list.forEach(objetoMovie =>crearCard(objetoMovie)); //**LUEGO BORRAR */
+    list.forEach(objetoMovie =>crearCard(objetoMovie)); //LUEGO BORRAR
+    list.forEach(objetoMovie =>crearCard(objetoMovie)); //LUEGO BORRAR
 }
 
 const getObject = async () => {
     try {
 
-        const listaPeliculasMayor = await axios.get('https://students-api.up.railway.app/movies')
+        const listaPeliculasMayor = await axios.get('http://localhost:3000/movies')
         const listaPeliculas = listaPeliculasMayor.data
 
         funcionIteradora(listaPeliculas)
