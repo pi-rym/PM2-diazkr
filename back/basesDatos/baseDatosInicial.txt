@@ -54,12 +54,5 @@
         "genere": ["Crime", "Drama", "Thriller"],
         "duration": "1h 58min",
         "poster": "https://i.pinimg.com/736x/bc/e4/5d/bce45d85695b9c738399cf10ac133bc5.jpg"
-    },
-    {
-        "title": "Goodfellas",
-        "date": "03-Julio-2034",
-        "genere": ["Biography", "Crime", "Drama"],
-        "duration": "2h 26min",
-        "poster": "https://i.pinimg.com/564x/dd/c6/e4/ddc6e435721b8a7e62c4f9bb128ae83c.jpg"
     }
 ]
