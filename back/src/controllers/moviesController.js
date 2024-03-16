@@ -1,8 +1,8 @@
-const {Repository} = require("../services/moviesServices")
+//const {Repository} = require("../services/moviesServices")
 
-const repository = new Repository();
+//const repository = new Repository();
 
-
+/*
 const createMovie = async(req,res) =>{
 
     try {
@@ -35,11 +35,12 @@ module.exports = {
     testMovies
 }
 
+*/
 
 
 
 
-/*
+
 
 const {traerMovies} = require("../services/moviesServices")
 
@@ -62,4 +63,3 @@ const testMovies = async (req,res) =>{
 
 module.exports = testMovies;
 
-*/

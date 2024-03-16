@@ -4,7 +4,7 @@ const axios = require('axios');
 
 //Acá creamos la clase movie y podemos añador pelis
 
-
+/*
 class Movie {
     constructor(title,date, genere,duration,poster){
         this.title = title;
@@ -39,11 +39,12 @@ module.exports = {
     Movie
 };
 
+*/
 
 
 
 
-/*
+
 const traerMovies = async () =>{
 
     try {
@@ -53,7 +54,7 @@ const traerMovies = async () =>{
         
     } catch (error) {
 
-        return console.log(error.message);
+        throw new Error(error);
     }    
     
 }
@@ -64,4 +65,3 @@ module.exports={
     traerMovies,
 }
 
-*/
