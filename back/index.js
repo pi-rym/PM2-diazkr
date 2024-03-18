@@ -1,8 +1,10 @@
 const app = require('./src/server');
 
-//Darle la capacidad de recibir solicitudes
+const dbConnection = require("./src/config/dbConnection")
 
-//Usanso el método listen
-app.listen(3000,()=>{
-    console.log("Estamos escuchando desde el puerto 3000");
-});
+dbConnection()
+.then(()=>{
+    app.listen(3000,()=>{console.log("Estamos escuchando desde el puerto 3000")});
+}).catch((err)=>console.log('tenemos un problmas con la conexión a la base de datos', err.message))
+
+    

@@ -1,23 +1,41 @@
 
-const axios = require('axios');
+const Movie = require("../models/Movie")
 
 const traerMovies = async () =>{
 
     try {
-        //Lo comentado es para usar la API
-        const movies = await axios.get("https://students-api.up.railway.app/movies")
-        return movies.data;
+        const movies = await Movie.find();
+        return movies;
         
     } catch (error) {
-
         throw new Error(error);
     }    
     
+}
+
+let listaMovies = [];
+
+
+const postMoviesServices = async ({title,year,director,duration,genre,rate,poster})=>{
+
+    const newMovie = {
+        title,
+        year,
+        director,
+        duration,
+        genre,
+        rate,
+        poster
+    }
+
+    listaMovies.push(newMovie);
+
 }
 
 
 
 module.exports={
     traerMovies,
+    postMoviesServices 
 }
 

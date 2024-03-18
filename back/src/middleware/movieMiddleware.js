@@ -1,11 +1,17 @@
-const validateProduct = (req, res, next) => {
+const validateMovie = (req, res, next) => {
 
-    const { title,date, genere,duration,poster } = req.body
+    const {  title, 
+        year,
+        director,
+        duration,
+        genre,
+        rate,
+        poster } = req.body
 
-    if(![ title,date, genere,duration,poster ].every(Boolean)) return res.status(400).json({message: "Faltan datos por completar"})
+    if(![ title,year, director, genre,duration,rate,poster ].every(Boolean)) return res.status(400).json({message: "Faltan datos por completar"})
 
     next()
 
 }
 
-module.exports = validateProduct;
+module.exports = validateMovie;
