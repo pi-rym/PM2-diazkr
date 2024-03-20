@@ -4,8 +4,8 @@ module.exports={
     mode: "development",
     entry: {
         index: "./scripts/index.js",
-        script: "./scripts/scriptNew.js"
-
+        script: "./scripts/scriptNew.js",
+        contact: "./scripts/contact.js/indexContact.js"
     },
 
     output: {

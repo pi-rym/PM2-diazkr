@@ -3,8 +3,6 @@ const crearCard = require("./functions");
 
 const funcionIteradora = function(list){
     list.forEach(objetoMovie =>crearCard(objetoMovie));
-    list.forEach(objetoMovie =>crearCard(objetoMovie)); //LUEGO BORRAR
-    list.forEach(objetoMovie =>crearCard(objetoMovie)); //LUEGO BORRAR
 }
 
 const getObject = async () => {
@@ -35,7 +33,7 @@ getObject();
 var swiper = new Swiper(".mySwiper", {
     
     spaceBetween: 30,
-    loop: false, //true
+    //loop:true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

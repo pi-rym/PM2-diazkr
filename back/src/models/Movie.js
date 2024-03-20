@@ -15,7 +15,7 @@ const movieSchema = new Schema({
         require:true
     },
     duration: {
-        type:Number,
+        type:String,
         require:true
     },
     genre: {
