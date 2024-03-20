@@ -14,7 +14,7 @@ const postMovie = async () => {
 
         
     } catch (error) {
-        throw new Error('Error en el proceso de crear la película')
+        throw new Error("Hay un error en el servidor")
     }
 }
 

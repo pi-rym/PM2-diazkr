@@ -19,8 +19,8 @@ const validateInputs = function(titleInput, yearInput,directorInput, durationInp
     }
 
     // Validación de año
-    if (isNaN(yearInput) || yearInput.length !== 4) {
-        errorYear.innerHTML = "Ingrese un formato de año válido";
+    if (isNaN(yearInput) || yearInput.length !== 4 || yearInput < 1700 || yearInput > 2030) {
+        errorYear.innerHTML = "Ingrese un año válido entre 1700 y 2030";
         return false;
     } else {
         errorYear.innerHTML = "";
