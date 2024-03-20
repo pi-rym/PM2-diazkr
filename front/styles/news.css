@@ -122,3 +122,38 @@ nav{
     background-color:  #eb5c68;
     transform: scale(0.9);
 }
+
+
+
+footer{
+    background-color: #272f47;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    padding-bottom: 1em;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    
+}
+
+.icono-f{
+    color: aliceblue;
+    font-size: 1em;
+    padding-left: 1em;
+    transition: 0.2s;
+}
+
+.icono-f:hover{
+    transform: scale(1.1);
+}
+

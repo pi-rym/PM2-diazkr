@@ -51,16 +51,26 @@
 
     <h4 class="m-5">Envianos las peliculas que quieres tener!</h4>
 
-    <div class="container" style="width: 45vw;" >
+    <div class="container contenedor-formulario" style="width: 45vw;" >
       <form>
-        <!-- nombre de la pelicula  -->
-        <label for="title-input m-3">Ingresa el título de la pelicula</label>
-        <input class="form-control title-input m-3 p-2" type="text" placeholder="Titulo pelicula">
-        <p class="mensaje-title mensaje-error mx-3"></p>
-      <!-- año de la pelicula -->
-        <label for="year-input">Ingresa el año de lanzamiento</label>
-        <input class="form-control year-input m-3 p-2" type="text" placeholder="Año" aria-label="default input example">
-        <p class="mensaje-year mensaje-error mx-3"></p>
+
+        <div class="container contenedor-title-year">
+          
+          <div class="container contenedor-ti"> 
+            <label for="title-input m-3">Ingresa el título de la pelicula</label>
+            <input class="form-control title-input m-3 p-2" type="text" placeholder="Titulo pelicula">
+            <p class="mensaje-title mensaje-error mx-3"></p>
+          </div>
+
+          <div class="container contenedor-ti-year">
+            <label for="year-input">Ingresa el año de lanzamiento</label>
+            <input class="form-control year-input m-3 p-2" type="text" placeholder="Año">
+            <p class="mensaje-year mensaje-error mx-3"></p>
+          </div>
+
+            
+        </div>
+        
           
       <!-- director de la pelicula -->
         <label for="director-input">Ingresa el director de la pelicula</label>
@@ -210,6 +220,21 @@
 
 
     </div>
+
+    <footer class="footer">
+      <div class="container footer-container">
+          <div class="col">
+              <div class="col-md-12 text-center">
+                  <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+              </div>
+              <div class="col-md-12 text-center">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icono-f"></i></a>
+                <a href="https://twitter.com/home?lang=es"><i class="fab fa-twitter icono-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram icono-f"></i></a>
+            </div>
+          </div>
+      </div>
+  </footer>
 
     <script src="../public/contact.bundle.js"></script>
   </body>
