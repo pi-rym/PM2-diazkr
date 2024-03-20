@@ -18,6 +18,7 @@ const crearCard = function(objeto){
                 <div class="name-profession">
                     <span class="name">${objeto.title}</span>
                     <span class="profession"> ${objeto.duration}</span>
+                    <span class="profession"> Director: ${objeto.director}</span>
                 </div>
 
                 <div class="button">
