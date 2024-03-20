@@ -2,7 +2,9 @@ const axios = require('axios');
 const crearCard = require("./functions");
 
 const funcionIteradora = function(list){
-    list.forEach(objetoMovie =>crearCard(objetoMovie));
+    for (let i = list.length - 1; i >= 0; i--) {
+        crearCard(list[i]);
+    }
 }
 
 const getObject = async () => {

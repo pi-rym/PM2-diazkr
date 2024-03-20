@@ -23,7 +23,7 @@ const postMoviesController = async (req,res) =>{
     try {
 
         await postMoviesServices(req.body)
-        res.status(200).json({message:"Pelicula agregada exitosamente"});
+        res.status(201).json({message:"Pelicula agregada exitosamente"});
 
         
     } catch (error) {

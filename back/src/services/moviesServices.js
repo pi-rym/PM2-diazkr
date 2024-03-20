@@ -13,22 +13,17 @@ const traerMovies = async () =>{
     
 }
 
-let listaMovies = [];
 
 
-const postMoviesServices = async ({title,year,director,duration,genre,rate,poster})=>{
+const postMoviesServices = async (objectMovie)=>{
 
-    const newMovie = {
-        title,
-        year,
-        director,
-        duration,
-        genre,
-        rate,
-        poster
+    try{
+        const newMovie = await Movie.create(objectMovie)
+        return newMovie;
+    } catch(error){
+        throw Error('Error en el proceso de crear la pelicula')
     }
 
-    listaMovies.push(newMovie);
 
 }
 
