@@ -17,15 +17,14 @@ const postMovie = async () => {
         throw new Error(error.message)
     }
 }
-
-btnCreate.addEventListener("click", () => {
+btnCreate.addEventListener("click", (event) => {
+    event.preventDefault(); // Evita el comportamiento predeterminado del botón
     postMovie().then((data) => {
-        document.querySelector(".creacion-exitosa").innerHTML= "Se ha creado la pelicula! Chechala en Home"
+        document.querySelector(".creacion-exitosa").innerHTML= "Se ha creado la película! ¡Chécala en Home!";
     }).catch((error) => {
-        document.querySelector(".creacion-exitosa").innerHTML= error.message
+        document.querySelector(".creacion-exitosa").innerHTML= error.message;
     });
-});
-
+})
 
 btnDelete.addEventListener("click", () => {
     clearInputs()
